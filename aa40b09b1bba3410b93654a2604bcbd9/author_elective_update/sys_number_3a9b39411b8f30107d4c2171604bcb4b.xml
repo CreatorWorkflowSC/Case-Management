@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_number">
+    <sys_number action="DELETE">
+        <category display_value="" name="x_snc_ecms_business_entity">x_snc_ecms_business_entity</category>
+        <maximum_digits>7</maximum_digits>
+        <number>1000</number>
+        <prefix>BIZ_OLD</prefix>
+        <sys_class_name>sys_number</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2021-10-05 14:14:14</sys_created_on>
+        <sys_id>3a9b39411b8f30107d4c2171604bcb4b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>BIZ_OLD</sys_name>
+        <sys_package display_value="Case Management" source="x_snc_ecms">aa40b09b1bba3410b93654a2604bcbd9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Case Management">aa40b09b1bba3410b93654a2604bcbd9</sys_scope>
+        <sys_update_name>sys_number_3a9b39411b8f30107d4c2171604bcb4b</sys_update_name>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2021-10-12 02:04:29</sys_updated_on>
+    </sys_number>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Case Management">aa40b09b1bba3410b93654a2604bcbd9</application>
+        <file_path/>
+        <instance_id>9e5e7297dbf290d89a4dcac5059619d0</instance_id>
+        <instance_name>appengine4gov</instance_name>
+        <name>sys_number_3a9b39411b8f30107d4c2171604bcb4b</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_number"><sys_number action="INSERT_OR_UPDATE"><category display_value="" name="x_snc_ecms_business_entity">x_snc_ecms_business_entity</category><maximum_digits>7</maximum_digits><number>1000</number><prefix>BIZ_OLD</prefix><sys_class_name>sys_number</sys_class_name><sys_created_by>Marc.Mouries</sys_created_by><sys_created_on>2021-10-05 14:14:14</sys_created_on><sys_id>3a9b39411b8f30107d4c2171604bcb4b</sys_id><sys_mod_count>1</sys_mod_count><sys_name>BIZ_OLD</sys_name><sys_package display_value="Case Management" source="x_snc_ecms">aa40b09b1bba3410b93654a2604bcbd9</sys_package><sys_policy/><sys_scope display_value="Case Management">aa40b09b1bba3410b93654a2604bcbd9</sys_scope><sys_update_name>sys_number_3a9b39411b8f30107d4c2171604bcb4b</sys_update_name><sys_updated_by>Marc.Mouries</sys_updated_by><sys_updated_on>2021-10-12 02:04:29</sys_updated_on></sys_number></record_update>]]></payload>
+        <payload_hash>-1114588442</payload_hash>
+        <record_name>BIZ_OLD</record_name>
+        <reverted_from/>
+        <source>b6403c9b1bba3410b93654a2604bcb0b</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2021-10-12 02:04:36</sys_created_on>
+        <sys_id>f2b79bcb1b8f3410b93654a2604bcbe0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17c723e94760000001</sys_recorded_at>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2021-10-12 02:04:36</sys_updated_on>
+        <type>Number</type>
+        <update_guid>fab79bcbac8f3410c623ff444e59e6df</update_guid>
+        <update_guid_history>fab79bcbac8f3410c623ff444e59e6df:-1114588442,1db75bcb6b8f34109cbda166af0c2ce8:-1034601370</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2021-10-13 18:50:36</sys_created_on>
+        <sys_db_object display_value="" name="sys_number">sys_number</sys_db_object>
+        <sys_id>6262b4a0a6914fa083ea65d9fc7a1b24</sys_id>
+        <sys_metadata>3a9b39411b8f30107d4c2171604bcb4b</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>BIZ_OLD</sys_name>
+        <sys_package display_value="Case Management" source="x_snc_ecms">aa40b09b1bba3410b93654a2604bcbd9</sys_package>
+        <sys_parent display_value="">ea9b39411b8f30107d4c2171604bcb38</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Case Management">aa40b09b1bba3410b93654a2604bcbd9</sys_scope>
+        <sys_scope_delete display_value="">0666e13ef5964650809934906ea3f900</sys_scope_delete>
+        <sys_update_name>sys_number_3a9b39411b8f30107d4c2171604bcb4b</sys_update_name>
+        <sys_update_version display_value="sys_number_3a9b39411b8f30107d4c2171604bcb4b">f2b79bcb1b8f3410b93654a2604bcbe0</sys_update_version>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2021-10-13 18:50:36</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

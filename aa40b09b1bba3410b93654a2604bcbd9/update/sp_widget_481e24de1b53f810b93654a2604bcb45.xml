@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function() {  /* widget controller */  var c = this;};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.mm_card  {
+    position: relative;
+  color: rgb(119, 119, 119);
+  transition: transform .2s; /* Animation */
+  width: 100%; 
+  padding: 0px;  
+  margin-bottom: 20px;
+  box-shadow: 2px 2px 3px 1px grey;
+  border: solid #fff 2px;
+}
+
+.mm_card:hover {
+  background: #3b5998;
+  color: #fff;
+  cursor: pointer;
+  transform: scale(1.05);
+  box-shadow: 2px 20px 30px 1px grey;
+  border: solid #fff 4px;
+}
+
+.mm_card_image  {
+  width: 100%; 
+}
+
+.mm_card__header {
+	position : absolute;
+  top : 5%;
+  left: 5%;
+  z-index: 2;
+}
+
+.mm_card__title {
+    color: #ffffff;
+    font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-transform: uppercase;
+    font-size: 4vw;
+    margin: 0;
+    text-shadow: 0 2px 4px rgb(0 0 0 / 50%);
+}
+
+.mm_card__title_text {
+    color: #ffffff;
+    font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+    font-size: 1em;
+  
+}
+
+.mm_card:before {
+    background: #2B5C0D;
+    bottom: 0;
+    content: "";
+    height: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    width: 100%;
+    z-index: 0;
+}
+.mm_card__overlay {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.3);
+    bottom: 0;
+    content: "";
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    __padding-right: 10px;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>mm_card_image_link</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>MM Card Image Link</name>
+        <option_schema>[&#13;
+    {&#13;
+        "displayValue": "Images",&#13;
+        "name": "image",&#13;
+        "display_value_list": [],&#13;
+        "section": "Presentation",&#13;
+        "label": "Image",&#13;
+        "type": "glide_list",&#13;
+        "value": "db_image",&#13;
+        "ed": {&#13;
+            "reference": "db_image"&#13;
+        }&#13;
+    },&#13;
+    {&#13;
+        "name": "title",&#13;
+        "section": "Presentation",&#13;
+        "label": "Title",&#13;
+        "type": "string"&#13;
+    },&#13;
+    {&#13;
+        "name": "link",&#13;
+        "section": "Presentation",&#13;
+        "label": "Link",&#13;
+        "type": "string"&#13;
+    }&#13;
+]</option_schema>
+        <public>true</public>
+        <roles/>
+        <script><![CDATA[(function() {
+
+    var img = new GlideRecord('db_image');
+    img.addQuery('sys_id', options.image);
+    img.query();
+    if (img.next()) {
+        data.image = img.getValue('name');
+    }
+    data.title = options.title || 'Card Title';
+    data.link  = options.link  || '?id=sc_category';
+    data.image = data.image || 'now-image-placeholder.jpg';
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2021-10-21 16:03:34</sys_created_on>
+        <sys_id>481e24de1b53f810b93654a2604bcb45</sys_id>
+        <sys_mod_count>74</sys_mod_count>
+        <sys_name>MM Card Image Link</sys_name>
+        <sys_package display_value="Case Management" source="x_snc_ecms">aa40b09b1bba3410b93654a2604bcbd9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Case Management">aa40b09b1bba3410b93654a2604bcbd9</sys_scope>
+        <sys_update_name>sp_widget_481e24de1b53f810b93654a2604bcb45</sys_update_name>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2021-10-25 17:26:18</sys_updated_on>
+        <template><![CDATA[<div class="mm_card">
+  <a href="{{c.data.link}}" aria-label="{{c.options.description}} which opens in a new window">
+    <img src="{{c.data.image}}" class="mm_card_image" alt="{{c.data.title}}"/>
+    <div class="mm_card__overlay"></div>
+    <div class="mm_card__header">
+        <h3 class="mm_card__title">
+          <div class="mm_card__title_text">{{c.data.title}}</div>
+      </h3>
+    </div>
+  </a>
+</div>]]></template>
+    </sp_widget>
+</record_update>

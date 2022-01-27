@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_snc_ecms.RecordUtils</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description>x_snc_ecms.RecordUtils</description>
+        <name>RecordUtils</name>
+        <script><![CDATA[var RecordUtils = Class.create();
+RecordUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+    type: 'RecordUtils',
+
+    getSysId: function(in_tableName, in_encodedQuery) {
+        var param = this._getParameters(in_tableName, in_encodedQuery);
+		gs.info(JSON.stringify(param));
+
+		var record = new GlideRecord(param.tableName);
+        record.addQuery(param.encodedQuery);
+        record.query();
+        var sys_id;
+        if (record.next()) {
+            sys_id = record.getUniqueValue();
+        }
+        return sys_id;
+    },
+
+    /**
+     * Retrieve the parameters value independently of where they come from: passed as parameters or in the Ajax call
+     */
+    _getParameters: function(in_tableName, in_encodedQuery) {
+        var tableName = global.JSUtil.nil(in_tableName) ? this.getParameter('sysparm_tableName') : in_tableName;
+        var encodedQuery = global.JSUtil.nil(in_encodedQuery) ? this.getParameter('sysparm_encodedQuery') : in_encodedQuery;
+        return {
+            tableName: tableName,
+            encodedQuery: encodedQuery
+        };
+    }
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2021-10-13 22:13:13</sys_created_on>
+        <sys_id>caf37c371b8370107d4c2171604bcb32</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>RecordUtils</sys_name>
+        <sys_package display_value="Case Management" source="x_snc_ecms">aa40b09b1bba3410b93654a2604bcbd9</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Case Management">aa40b09b1bba3410b93654a2604bcbd9</sys_scope>
+        <sys_update_name>sys_script_include_caf37c371b8370107d4c2171604bcb32</sys_update_name>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2021-10-14 04:00:08</sys_updated_on>
+    </sys_script_include>
+</record_update>

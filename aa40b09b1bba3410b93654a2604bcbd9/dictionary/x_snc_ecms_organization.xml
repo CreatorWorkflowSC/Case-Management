@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="x_snc_ecms_entity" label="Organization" max_length="40" name="x_snc_ecms_organization" sizeclass="921" type="collection">
+        <element label="Doing Business As" max_length="40" name="doing_business_as" type="string"/>
+        <element label="Established" max_length="40" name="established_date" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element choice="3" label="Organization type" max_length="40" name="organization_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Corporation" sequence="10" value="corporation"/>
+                <element inactive_on_update="false" label="Limited Liability Company" sequence="20" value="limited_liability_company"/>
+                <element inactive_on_update="false" label="Cooperative" sequence="30" value="cooperative"/>
+            </choice>
+        </element>
+    </element>
+</database>

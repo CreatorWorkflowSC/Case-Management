@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="x_snc_ecms_entity" label="Person" max_length="40" name="x_snc_ecms_person" sizeclass="15" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Date of birth" max_length="40" name="date_of_birth" type="glide_date"/>
+        <element label="First name" max_length="40" name="first_name" type="string"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;    var full_name = &quot;&quot;;&#13;&#10;    if (!current.first_name.nil()) {&#13;&#10;        full_name += current.first_name;&#13;&#10;    }&#13;&#10;    if (!current.last_name.nil()) {&#13;&#10;        full_name += &quot; &quot; + current.last_name;&#13;&#10;    }&#13;&#10;    return full_name;&#13;&#10;&#13;&#10;})(current);" display="true" label="Full name" max_length="30" name="full_name" type="string" virtual="true"/>
+        <element label="Last name" max_length="40" name="last_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Social Security Number" max_length="40" name="ssn" type="string"/>
+        <element label="U.S Citizen" max_length="40" name="us_citizen" type="boolean"/>
+    </element>
+</database>

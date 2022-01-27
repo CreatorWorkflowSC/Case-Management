@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="" section_id="e8ce1d5e1b93b8107d4c2171604bcb61" sys_domain="global" table="x_snc_ecms_case" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>number</element>
+            <position>0</position>
+            <sys_created_by>Frank.Kasper</sys_created_by>
+            <sys_created_on>2021-10-21 19:36:19</sys_created_on>
+            <sys_id>acce1d5e1b93b8107d4c2171604bcb63</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_ecms_case" sys_domain="global" view="Default view">e8ce1d5e1b93b8107d4c2171604bcb61</sys_ui_section>
+            <sys_updated_by>Frank.Kasper</sys_updated_by>
+            <sys_updated_on>2021-10-21 19:36:19</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>assigned_to</element>
+            <position>1</position>
+            <sys_created_by>Frank.Kasper</sys_created_by>
+            <sys_created_on>2021-10-21 19:36:19</sys_created_on>
+            <sys_id>a8ce1d5e1b93b8107d4c2171604bcb64</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_ecms_case" sys_domain="global" view="Default view">e8ce1d5e1b93b8107d4c2171604bcb61</sys_ui_section>
+            <sys_updated_by>Frank.Kasper</sys_updated_by>
+            <sys_updated_on>2021-10-21 19:36:19</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>cmdb_ci</element>
+            <position>2</position>
+            <sys_created_by>Frank.Kasper</sys_created_by>
+            <sys_created_on>2021-10-21 19:36:19</sys_created_on>
+            <sys_id>20ce1d5e1b93b8107d4c2171604bcb65</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_ecms_case" sys_domain="global" view="Default view">e8ce1d5e1b93b8107d4c2171604bcb61</sys_ui_section>
+            <sys_updated_by>Frank.Kasper</sys_updated_by>
+            <sys_updated_on>2021-10-21 19:36:19</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>active</element>
+            <position>3</position>
+            <sys_created_by>Frank.Kasper</sys_created_by>
+            <sys_created_on>2021-10-21 19:36:19</sys_created_on>
+            <sys_id>e8ce1d5e1b93b8107d4c2171604bcb8a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_ecms_case" sys_domain="global" view="Default view">e8ce1d5e1b93b8107d4c2171604bcb61</sys_ui_section>
+            <sys_updated_by>Frank.Kasper</sys_updated_by>
+            <sys_updated_on>2021-10-21 19:36:19</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>4</position>
+            <sys_created_by>Frank.Kasper</sys_created_by>
+            <sys_created_on>2021-10-21 19:36:19</sys_created_on>
+            <sys_id>60ce1d5e1b93b8107d4c2171604bcb8b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_ecms_case" sys_domain="global" view="Default view">e8ce1d5e1b93b8107d4c2171604bcb61</sys_ui_section>
+            <sys_updated_by>Frank.Kasper</sys_updated_by>
+            <sys_updated_on>2021-10-21 19:36:19</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>priority</element>
+            <position>5</position>
+            <sys_created_by>Frank.Kasper</sys_created_by>
+            <sys_created_on>2021-10-21 19:36:19</sys_created_on>
+            <sys_id>e4ce1d5e1b93b8107d4c2171604bcb8b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_ecms_case" sys_domain="global" view="Default view">e8ce1d5e1b93b8107d4c2171604bcb61</sys_ui_section>
+            <sys_updated_by>Frank.Kasper</sys_updated_by>
+            <sys_updated_on>2021-10-21 19:36:19</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>state</element>
+            <position>6</position>
+            <sys_created_by>Frank.Kasper</sys_created_by>
+            <sys_created_on>2021-10-21 19:36:19</sys_created_on>
+            <sys_id>6cce1d5e1b93b8107d4c2171604bcb8b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_ecms_case" sys_domain="global" view="Default view">e8ce1d5e1b93b8107d4c2171604bcb61</sys_ui_section>
+            <sys_updated_by>Frank.Kasper</sys_updated_by>
+            <sys_updated_on>2021-10-21 19:36:19</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>parent</element>
+            <position>7</position>
+            <sys_created_by>Frank.Kasper</sys_created_by>
+            <sys_created_on>2021-10-21 19:36:19</sys_created_on>
+            <sys_id>e0ce1d5e1b93b8107d4c2171604bcb8c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_ecms_case" sys_domain="global" view="Default view">e8ce1d5e1b93b8107d4c2171604bcb61</sys_ui_section>
+            <sys_updated_by>Frank.Kasper</sys_updated_by>
+            <sys_updated_on>2021-10-21 19:36:19</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>8</position>
+            <sys_created_by>Frank.Kasper</sys_created_by>
+            <sys_created_on>2021-10-21 19:36:19</sys_created_on>
+            <sys_id>68ce1d5e1b93b8107d4c2171604bcb8c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_ecms_case" sys_domain="global" view="Default view">e8ce1d5e1b93b8107d4c2171604bcb61</sys_ui_section>
+            <sys_updated_by>Frank.Kasper</sys_updated_by>
+            <sys_updated_on>2021-10-21 19:36:19</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>short_description</element>
+            <position>9</position>
+            <sys_created_by>Frank.Kasper</sys_created_by>
+            <sys_created_on>2021-10-21 19:36:19</sys_created_on>
+            <sys_id>ecce1d5e1b93b8107d4c2171604bcb8c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_ecms_case" sys_domain="global" view="Default view">e8ce1d5e1b93b8107d4c2171604bcb61</sys_ui_section>
+            <sys_updated_by>Frank.Kasper</sys_updated_by>
+            <sys_updated_on>2021-10-21 19:36:19</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>description</element>
+            <position>10</position>
+            <sys_created_by>Frank.Kasper</sys_created_by>
+            <sys_created_on>2021-10-21 19:36:19</sys_created_on>
+            <sys_id>64ce1d5e1b93b8107d4c2171604bcb8d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_ecms_case" sys_domain="global" view="Default view">e8ce1d5e1b93b8107d4c2171604bcb61</sys_ui_section>
+            <sys_updated_by>Frank.Kasper</sys_updated_by>
+            <sys_updated_on>2021-10-21 19:36:19</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>work_notes</element>
+            <position>11</position>
+            <sys_created_by>Frank.Kasper</sys_created_by>
+            <sys_created_on>2021-10-21 19:36:19</sys_created_on>
+            <sys_id>e8ce1d5e1b93b8107d4c2171604bcb8d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_ecms_case" sys_domain="global" view="Default view">e8ce1d5e1b93b8107d4c2171604bcb61</sys_ui_section>
+            <sys_updated_by>Frank.Kasper</sys_updated_by>
+            <sys_updated_on>2021-10-21 19:36:19</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>regional_office</element>
+            <position>12</position>
+            <sys_created_by>Marc.Mouries</sys_created_by>
+            <sys_created_on>2021-10-26 21:27:46</sys_created_on>
+            <sys_id>8e3863371b573010b93654a2604bcb52</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_ecms_case" sys_domain="global" view="Default view">e8ce1d5e1b93b8107d4c2171604bcb61</sys_ui_section>
+            <sys_updated_by>Marc.Mouries</sys_updated_by>
+            <sys_updated_on>2021-10-26 21:27:46</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>workflow</element>
+            <position>13</position>
+            <sys_created_by>Marc.Mouries</sys_created_by>
+            <sys_created_on>2021-11-18 04:33:09</sys_created_on>
+            <sys_id>2b8c564f1b3bfc10b93654a2604bcb2c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_ecms_case" sys_domain="global" view="Default view">e8ce1d5e1b93b8107d4c2171604bcb61</sys_ui_section>
+            <sys_updated_by>Marc.Mouries</sys_updated_by>
+            <sys_updated_on>2021-11-18 04:33:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>x_snc_ecms_case</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>Frank.Kasper</sys_created_by>
+            <sys_created_on>2021-10-21 19:36:19</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e8ce1d5e1b93b8107d4c2171604bcb61</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_snc_ecms_case</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Case Management" source="x_snc_ecms">aa40b09b1bba3410b93654a2604bcbd9</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Case Management">aa40b09b1bba3410b93654a2604bcbd9</sys_scope>
+            <sys_update_name>sys_ui_section_e8ce1d5e1b93b8107d4c2171604bcb61</sys_update_name>
+            <sys_updated_by>Frank.Kasper</sys_updated_by>
+            <sys_updated_on>2021-10-21 19:36:19</sys_updated_on>
+            <sys_user/>
+            <title>true</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>
