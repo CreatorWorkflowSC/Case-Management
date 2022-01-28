@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Case Note" max_length="40" name="x_snc_ecms_case_note" sizeclass="4" type="collection">
+        <element label="Case" max_length="32" name="case" reference="x_snc_ecms_case" type="reference"/>
+        <element label="Create Reminder?" max_length="40" name="create_reminder" type="boolean"/>
+        <element label="Note" max_length="4000" name="note" type="string"/>
+        <element label="Reminder Date" max_length="40" name="reminder_date" type="glide_date"/>
+        <element label="Reminder Short Description" max_length="200" name="reminder_short_description" type="string"/>
+        <index name="index">
+            <element name="case"/>
+        </index>
+    </element>
+</database>

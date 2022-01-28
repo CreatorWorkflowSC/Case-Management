@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="create_reminder" label="Create Reminder?" language="en" table="x_snc_ecms_case_note">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>create_reminder</element>
+            <help/>
+            <hint/>
+            <label>Create Reminder?</label>
+            <language>en</language>
+            <name>x_snc_ecms_case_note</name>
+            <plural>Create Reminder?s</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>Marc.Mouries</sys_created_by>
+            <sys_created_on>2021-11-18 05:05:52</sys_created_on>
+            <sys_id>cb0462071b7bfc10b93654a2604bcbe6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Create Reminder?</sys_name>
+            <sys_package display_value="Case Management" source="x_snc_ecms">aa40b09b1bba3410b93654a2604bcbd9</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Case Management">aa40b09b1bba3410b93654a2604bcbd9</sys_scope>
+            <sys_update_name>sys_documentation_x_snc_ecms_case_note_create_reminder_en</sys_update_name>
+            <sys_updated_by>Marc.Mouries</sys_updated_by>
+            <sys_updated_on>2021-11-18 05:05:52</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

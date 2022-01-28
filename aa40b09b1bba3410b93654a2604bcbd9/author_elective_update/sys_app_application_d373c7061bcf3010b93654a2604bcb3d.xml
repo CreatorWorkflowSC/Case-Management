@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_application">
+    <sys_app_application action="DELETE">
+        <active>true</active>
+        <category display_value="Custom Applications">e0355b31ef303000a61d5a3615c0fb78</category>
+        <description/>
+        <device_type>browser</device_type>
+        <hint/>
+        <name/>
+        <order>100</order>
+        <roles/>
+        <sys_class_name>sys_app_application</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2021-10-08 22:02:24</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>d373c7061bcf3010b93654a2604bcb3d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Case Management</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Case Management" source="x_snc_ecms">aa40b09b1bba3410b93654a2604bcbd9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Case Management">aa40b09b1bba3410b93654a2604bcbd9</sys_scope>
+        <sys_update_name>sys_app_application_d373c7061bcf3010b93654a2604bcb3d</sys_update_name>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2021-10-08 22:02:24</sys_updated_on>
+        <title>Case Management</title>
+        <view_name/>
+    </sys_app_application>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Case Management">aa40b09b1bba3410b93654a2604bcbd9</application>
+        <file_path/>
+        <instance_id>9e5e7297dbf290d89a4dcac5059619d0</instance_id>
+        <instance_name>appengine4gov</instance_name>
+        <name>sys_app_application_d373c7061bcf3010b93654a2604bcb3d</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_application"><sys_app_application action="INSERT_OR_UPDATE"><active>true</active><category display_value="Custom Applications">e0355b31ef303000a61d5a3615c0fb78</category><description/><device_type>browser</device_type><hint/><name/><order>100</order><roles/><sys_class_name>sys_app_application</sys_class_name><sys_created_by>Marc.Mouries</sys_created_by><sys_created_on>2021-10-08 22:02:24</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>d373c7061bcf3010b93654a2604bcb3d</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Case Management</sys_name><sys_overrides/><sys_package display_value="Case Management" source="x_snc_ecms">aa40b09b1bba3410b93654a2604bcbd9</sys_package><sys_policy/><sys_scope display_value="Case Management">aa40b09b1bba3410b93654a2604bcbd9</sys_scope><sys_update_name>sys_app_application_d373c7061bcf3010b93654a2604bcb3d</sys_update_name><sys_updated_by>Marc.Mouries</sys_updated_by><sys_updated_on>2021-10-08 22:02:24</sys_updated_on><title>Case Management</title><view_name/></sys_app_application></record_update>]]></payload>
+        <payload_hash>-1759345283</payload_hash>
+        <record_name>Case Management</record_name>
+        <reverted_from/>
+        <source>b6403c9b1bba3410b93654a2604bcb0b</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2021-10-08 22:02:24</sys_created_on>
+        <sys_id>79830b061bcf3010b93654a2604bcb1b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17c61edc3140000001</sys_recorded_at>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2021-10-08 22:02:24</sys_updated_on>
+        <type>Application Menu</type>
+        <update_guid>71830b0680cf30108ff18719c18ffd1b</update_guid>
+        <update_guid_history>71830b0680cf30108ff18719c18ffd1b:-1759345283</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Case Management">c5b4ee471b7bfc10b93654a2604bcb5b</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2021-11-18 05:08:45</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_application">sys_app_application</sys_db_object>
+        <sys_id>16e5ad6a67e74c71a496bd280b0ef691</sys_id>
+        <sys_metadata>d373c7061bcf3010b93654a2604bcb3d</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Case Management</sys_name>
+        <sys_package display_value="Case Management" source="x_snc_ecms">aa40b09b1bba3410b93654a2604bcbd9</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Case Management">aa40b09b1bba3410b93654a2604bcbd9</sys_scope>
+        <sys_scope_delete display_value="">0666e13ef5964650809934906ea3f900</sys_scope_delete>
+        <sys_update_name>sys_app_application_d373c7061bcf3010b93654a2604bcb3d</sys_update_name>
+        <sys_update_version display_value="sys_app_application_d373c7061bcf3010b93654a2604bcb3d">79830b061bcf3010b93654a2604bcb1b</sys_update_version>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2021-11-18 05:08:45</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

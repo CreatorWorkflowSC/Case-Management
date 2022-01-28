@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_snc_ecms.Calculator</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description>Usage: &#13;
+x_snc_ecms.Calculator&#13;
+&#13;
+var sum = new Calculator().getSum("table_name","user");&#13;
+gs.info ( sum) ;&#13;
+&#13;
+</description>
+        <name>Calculator</name>
+        <script><![CDATA[/* 
+ * Calculator function that Works in both Client and Server scripts
+ */
+var Calculator = Class.create();
+Calculator.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+
+    _getAggregateByType: function(in_tableName, pColumn, pEncodedQuery, pAggregateType) {
+        var ga = new GlideAggregate(in_tableName);
+        if (pEncodedQuery) {
+            ga.addQuery(pEncodedQuery);
+        }
+        ga.setGroup(false);
+        //ga.setOrder(false);
+        ga.addAggregate(pAggregateType, pColumn);
+        ga.query();
+        if (ga.next()) {
+            return ga.getAggregate(pAggregateType, pColumn);
+        } else {
+            return null;
+        }
+    },
+
+    /**
+     * Retrieve the parameters value independently of where they come from: passed as parameters or in the Ajax call
+     */
+    _getParameters: function(in_tableName, in_fieldName, in_encodedQuery) {
+        var tableName = global.JSUtil.nil(in_tableName) ? this.getParameter('sysparm_tableName') : in_tableName;
+        var fieldName = global.JSUtil.nil(in_fieldName) ? this.getParameter('sysparm_fieldName') : in_fieldName;
+        var encodedQuery = global.JSUtil.nil(in_encodedQuery) ? this.getParameter('sysparm_encodedQuery') : in_encodedQuery;
+//        var aggregateType = global.JSUtil.nil(in_aggregateType) ? this.getParameter('sysparm_aggregateType') : in_aggregateType;
+        return {
+            tableName: tableName,
+            fieldName: fieldName,
+            encodedQuery: encodedQuery
+        };
+    },
+
+    getMin: function(in_tableName, in_fieldName, in_encodedQuery) {
+		var param = this._getParameters(in_tableName, in_fieldName, in_encodedQuery);
+        return this._getAggregateByType(param.tableName, param.fieldName, param.encodedQuery, 'MIN');
+    },
+
+    getMax: function(in_tableName, in_fieldName, in_encodedQuery) {
+		var param = this._getParameters(in_tableName, in_fieldName, in_encodedQuery);
+        return this._getAggregateByType(param.tableName, param.fieldName, param.encodedQuery, 'MAX');
+    },
+
+    getAvg: function(in_tableName, in_fieldName, in_encodedQuery) {
+		var param = this._getParameters(in_tableName, in_fieldName, in_encodedQuery);
+        return this._getAggregateByType(param.tableName, param.fieldName, param.encodedQuery, 'AVG');
+    },
+
+    getSum: function (in_tableName, in_fieldName, in_encodedQuery) {
+		var param = this._getParameters(in_tableName, in_fieldName, in_encodedQuery);
+        return this._getAggregateByType(param.tableName, param.fieldName, param.encodedQuery, 'SUM');
+    },
+
+    type: 'Calculator'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>Marc.Mouries</sys_created_by>
+        <sys_created_on>2021-10-06 01:56:42</sys_created_on>
+        <sys_id>17dadcd11b0b70107d4c2171604bcb6a</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name>Calculator</sys_name>
+        <sys_package display_value="Case Management" source="x_snc_ecms">aa40b09b1bba3410b93654a2604bcbd9</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Case Management">aa40b09b1bba3410b93654a2604bcbd9</sys_scope>
+        <sys_update_name>sys_script_include_17dadcd11b0b70107d4c2171604bcb6a</sys_update_name>
+        <sys_updated_by>Marc.Mouries</sys_updated_by>
+        <sys_updated_on>2021-10-06 19:48:27</sys_updated_on>
+    </sys_script_include>
+</record_update>

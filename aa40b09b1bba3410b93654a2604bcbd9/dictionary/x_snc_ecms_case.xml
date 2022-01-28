@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="task" label="Case" max_length="40" name="x_snc_ecms_case" sizeclass="172" type="collection">
+        <element label="Regional Office" max_length="32" name="regional_office" reference="x_snc_psd_pas_regional_office" type="reference"/>
+        <element label="Workflow" max_length="80" name="workflow" type="workflow"/>
+    </element>
+</database>
