@@ -27,20 +27,21 @@
         <rest_service_text/>
         <rest_variables/>
         <role_conditions/>
-        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/ ) {
 
-	var reminder_task_Gr = new GlideRecord('x_snc_ecms_case_task');
-	reminder_task_Gr.initialize();
-	
-	reminder_task_Gr.setValue('short_description', current.reminder_short_description);
-	reminder_task_Gr.setValue('due_date', new GlideDateTime(current.reminder_date));
-	reminder_task_Gr.setValue('reminder_date', current.reminder_date);
-	reminder_task_Gr.setValue('claim', current.claim);
-	//reminder_task_Gr.setValue('type', 'general');
-	reminder_task_Gr.setValue('assigned_to', gs.getUserID());
-	
-	var new_record_sys_id = reminder_task_Gr.insert();
-	gs.addInfoMessage("reminder created: " + new_record_sys_id);
+    var reminder_task_Gr = new GlideRecord('x_snc_ecms_case_task');
+    reminder_task_Gr.initialize();
+
+    reminder_task_Gr.setValue('short_description', current.reminder_short_description);
+    reminder_task_Gr.setValue('due_date'         , new GlideDateTime(current.reminder_date));
+    reminder_task_Gr.setValue('reminder_date'    , current.reminder_date);
+    reminder_task_Gr.setValue('assigned_to'      , gs.getUserID());
+    reminder_task_Gr.setValue('case'             , current.getValue("case") );
+	//reminder_task_Gr.setValue('type', 'reminder');
+
+    var new_record_sys_id = reminder_task_Gr.insert();
+
+    gs.addInfoMessage("reminder created.");
 
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
@@ -49,7 +50,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>c3c7264b1b7bfc10b93654a2604bcb95</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_name>Create Reminder</sys_name>
         <sys_overrides/>
         <sys_package display_value="Case Management" source="x_snc_ecms">aa40b09b1bba3410b93654a2604bcbd9</sys_package>
@@ -57,9 +58,9 @@
         <sys_scope display_value="Case Management">aa40b09b1bba3410b93654a2604bcbd9</sys_scope>
         <sys_update_name>sys_script_c3c7264b1b7bfc10b93654a2604bcb95</sys_update_name>
         <sys_updated_by>Marc.Mouries</sys_updated_by>
-        <sys_updated_on>2021-11-30 18:39:08</sys_updated_on>
+        <sys_updated_on>2022-01-28 18:25:43</sys_updated_on>
         <template/>
-        <when>before</when>
+        <when>after</when>
     </sys_script>
     <sys_translated_text action="delete_multiple" query="documentkey=c3c7264b1b7bfc10b93654a2604bcb95"/>
 </record_update>
