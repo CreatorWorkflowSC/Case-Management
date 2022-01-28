@@ -1,4 +1,4 @@
-# Case-Management
+# Case Management App
 
 Accelerate the configuration of Case Management applications with ServiceNow App Engine Studio
 
